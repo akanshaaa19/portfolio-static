@@ -1,0 +1,240 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #191A19;
+    color: #fff;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+    border-bottom: #3a3a3a 1px solid;
+}
+
+ul{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 2% 5%;
+    text-align: right;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+}
+
+
+
+.link-nav{
+    color: #fff;
+    padding: 10px;
+}
+.nav-item{
+    padding: 2px;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    color: #64FFDA;
+    font-weight: 700;
+}
+
+.connect{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.connect a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+
+}
+
+.connect i:hover{
+    color: #64FFDA;
+    transform: translateY(-4px);
+}
+
+
+#home{
+    padding: 7% 15%;
+}
+
+.home-heading{
+    font-size: 4.5rem;
+}
+
+.home-p{
+    width: 65%;
+    color: #d6d6d6;
+}
+
+.intro{
+    padding-top: 100px;
+}
+
+.home-connect{
+    display: none;
+}
+
+.img-bg{
+    background-color: #b6f1e265;
+    border-radius: 100%;
+    height: 30vh;
+    width: 30vh;
+    text-align: center;
+}
+.intro-img{
+    height: 30vh;  
+    border-radius: 100%;
+}
+
+.name{
+    color: #64FFDA;
+    font-weight: 700;
+}
+
+#about{
+    padding: 7% 15%;
+}
+
+#about p{
+    width: 60%;
+}
+
+.download-btn{
+    width: 30%;
+    height: 3rem;
+    padding: 8px;
+    font-size: 1rem;
+    color: #64FFDA;
+    background: none;
+    border: 1px solid #64FFDA;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-btn:hover{
+    background-color: #64ffdb09;   
+}
+
+#skills{
+    padding: 7% 15%;
+}
+
+#skills i{
+    padding: 20px;
+}
+
+.skill-list{
+    padding-bottom: 20px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.skill-name{
+    color: rgb(139, 139, 139);
+}
+
+#skills p{
+}
+
+#projects{
+    padding: 7% 15%;
+
+}
+
+
+@media screen and (max-width: 600px){
+    section{
+        height: 80vh;
+        border: none;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .intro{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-connect{
+        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .home-connect a{
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(139, 139, 139);
+    }
+
+    .home-connect i:hover{
+        color: #64FFDA;
+        transform: translateY(-4px);
+    }
+    
+
+    .home-heading{
+        font-size: 3rem;
+    }
+
+    .intro-img, .img-bg{
+        display: none;
+    }
+    #home{
+        text-align: center;
+    }
+    .home-p{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    #about p{
+        width: 100%;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .download-btn{
+        width: 50%;
+    }
+
+    
+}
